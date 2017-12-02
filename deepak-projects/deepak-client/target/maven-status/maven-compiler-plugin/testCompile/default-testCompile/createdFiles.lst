@@ -1,0 +1,8 @@
+client/controller/AddressControllerServerTest.class
+client/service/AddressServiceImplTest$AddressServiceImplTestContextConfiguration.class
+client/service/AddressServiceImplTest.class
+client/database/AddressDatabaseTest.class
+client/controller/AddressControllerTest.class
+client/testUtils/ControllerTestUtils.class
+client/builder/AddressBuilder.class
+client/controller/ErrorControllerTest.class

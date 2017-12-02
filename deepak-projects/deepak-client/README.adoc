@@ -1,0 +1,15 @@
+Project - deepak-client
+A java client built with spring boot framework.
+
+# Before running the client:
+* Please start the sever. (deepak-server)
+
+# Go into directory deepak-client
+cd deepak-client/
+# Skip the clean instal if you want to run the server using existing .jar file
+mvn clean install 
+
+# Run the client on port 9090 (You may choose any port that is available).
+java -jar ./target/deepak-client-0.1.0.jar --server.port=9090
+
+
