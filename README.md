@@ -2,7 +2,7 @@
 We have two indpendent projects:
 * deepak-client 
 * deepak-server
-Both are built using spring boot framework. Maven is used as a build tool.
+- Both are built using spring boot framework. Maven is used as a build tool.
 
 
 ## Running Server and Client 
@@ -14,7 +14,10 @@ Clone the repository.
 1. Go into directory `deepak-sever`
 2. Build the prject and make fresh jar file: 
    * `mvn clean install`
-   * To skip tests use `mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true`
+   * To skip tests use 
+   ```
+   mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+   ```
 3. Run the server on port 9091 (or any available port.)
    * `java -jar target/deepak-server-0.1.0.jar --server.port=9091`
 
@@ -22,7 +25,10 @@ Clone the repository.
 1. Go into directory `deepak-client`
 2. Build the prject and make fresh jar file: 
    * `mvn clean install`
-   * To skip tests use `mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true`
+   * To skip tests use 
+   ```
+   mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+   ```
 3. Run the server on port 9090 (or any available port.)
    * `java -jar target/deepak-client-0.1.0.jar --server.port=9090`
 
