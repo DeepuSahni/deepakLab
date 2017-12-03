@@ -6,7 +6,7 @@ We have two indpendent projects. Both are built using spring boot framework. Mav
 ## Running Server and Client 
 
 Clone the repository.
-* `git clone <repository-url>`
+* `git clone https://github.com/DeepuSahni/deepakLab.git`
 
 #### Starting the server
 1. Go into directory `deepak-sever`
