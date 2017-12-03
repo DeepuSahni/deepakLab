@@ -1,13 +1,3 @@
-Project - deepak-server
-A java server built with spring boot framework.
-
-
-# Go into directory deepak-server
-cd deepak-server/
-# Skip the clean instal if you want to run the server using existing .jar file
-mvn clean install 
-
-# Run the server on port 9091 (You may choose any port that is available).
-java -jar ./target/deepak-server-0.1.0.jar --server.port=9091
-
-Remember this port, you would need this port number to invoke requests from client.
+## Project: `deepak-server`
+* A java rest server built with spring boot framework.
+* Please refer to parent folder read me file for more details on this project. 
