@@ -1,9 +1,7 @@
 ## Overview 
-We have two indpendent projects:
+We have two indpendent projects. Both are built using spring boot framework. Maven is used as a build tool.
 * deepak-client 
 * deepak-server
-- Both are built using spring boot framework. Maven is used as a build tool.
-
 
 ## Running Server and Client 
 
@@ -15,25 +13,26 @@ Clone the repository.
 2. Build the prject and make fresh jar file: 
    * `mvn clean install`
    * To skip tests use 
-   ```
-   mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
-   ```
+    ```
+    mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+    ```
 3. Run the server on port 9091 (or any available port.)
    * `java -jar target/deepak-server-0.1.0.jar --server.port=9091`
+4. Please remember this port number, you would need this when making request from client.
 
 #### Starting the client
 1. Go into directory `deepak-client`
 2. Build the prject and make fresh jar file: 
    * `mvn clean install`
    * To skip tests use 
-   ```
-   mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
-   ```
+    ```
+    mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
+    ```
 3. Run the server on port 9090 (or any available port.)
    * `java -jar target/deepak-client-0.1.0.jar --server.port=9090`
 
 ## Invoking Requests
-1. Connect to server and store data in client 
+1. Connect to server (running on port 9091) and store data in client (running on 9090)
    * http://localhost:9090/fetchAndStore/9091
    * Use request type = GET (Rpeat to keep adding new records to client db.)
    * Result: Fetches a new record from sever and saves the same into client database.
