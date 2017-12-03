@@ -1,5 +1,5 @@
 ## Overview 
-We have two indpendent projects. Both are built using spring boot framework. Maven is used as a build tool.
+We have two independent projects. Both are built using spring boot framework. Maven is used as a build tool.
 * deepak-client 
 * deepak-server
 
@@ -34,13 +34,13 @@ Clone the repository.
 ## Invoking Requests
 1. Connect to the server (running on port 9091) and store data in client (running on 9090):
    * http://localhost:9090/fetchAndStore/9091
-   * Use request type = GET (Rpeat to keep adding new records to client db.)
+   * Use request type = GET (Repeat to keep adding new records to client db.)
    * Result: Fetches a new record from sever and saves the same into client database.
 
 2. GET request: 
    * http://localhost:9090/getAddressById/1
    * Use request type = GET
-   * Result: Gets the record mathing with suplied ID. 
+   * Result: Gets the record matching with supplied ID. 
 
 
 #### Use postman like tool to make other requests.
@@ -65,11 +65,11 @@ Clone the repository.
 ## Future Improvements
    1. Add security. 
    2. Add logging.
-   3. More specfic error messages in error handling.
+   3. More specific error messages in error handling.
    4. Use properties files for error handling. For custom errors.
-   5. Let client pass full server address or make it confgurable. eg. through prperties file.
-   6. Add conversion for date field in Address - make it human readable espeically when using in UI.
-   7. Add type of address for resuability. Eg. Home Address, Office Address.
+   5. Let client pass full server address or make it configurable. Eg. through properties file.
+   6. Add conversion for date field in Address - make it human readable especially when using in UI.
+   7. Add type of address for reusability. Eg. Home Address, Office Address.
    8. Add server tests: task said we could have used mock sever so have not added any server side tests.
 
 
@@ -89,8 +89,8 @@ Clone the repository.
     ```
 2. Maven build error?
   - This might be because of maven failing to find the JAVA_HOME.
-  - Please export your JAVA_HOME. `eport JAVA_HOME=<your java home>`
-3. Cannot download maven dependenices?
+  - Please export your JAVA_HOME. `export JAVA_HOME=<your java home>`
+3. Cannot download maven dependencies?
   - Please check the proxy settings for maven
   - You can add proxies for maven in your  settings file `~/.m2/settings.xml`.
   - You may not need username and password in proxy elements.
