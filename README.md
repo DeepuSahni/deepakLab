@@ -10,29 +10,29 @@ Clone the repository.
 
 #### Starting the server
 1. Go into directory `deepak-sever`
-2. Build the prject and make fresh jar file: 
+2. Build the project and make fresh jar file: 
    * `mvn clean install`
-   * To skip tests use 
+   * To skip tests use: 
     ```
     mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
     ```
-3. Run the server on port 9091 (or any available port.)
+3. Run the server on port 9091 (or any available port):
    * `java -jar target/deepak-server-0.1.0.jar --server.port=9091`
 4. Please remember this port number, you would need this when making request from client.
 
 #### Starting the client
 1. Go into directory `deepak-client`
-2. Build the prject and make fresh jar file: 
+2. Build the project and make fresh jar file: 
    * `mvn clean install`
-   * To skip tests use 
+   * To skip tests use: 
     ```
     mvn clean install -Dmaven.test.skip=true -DskipTests -Dmaven.test.failure.ignore=true
     ```
-3. Run the server on port 9090 (or any available port.)
+3. Run the client on port 9090 (or any available port):
    * `java -jar target/deepak-client-0.1.0.jar --server.port=9090`
 
 ## Invoking Requests
-1. Connect to server (running on port 9091) and store data in client (running on 9090)
+1. Connect to the server (running on port 9091) and store data in client (running on 9090):
    * http://localhost:9090/fetchAndStore/9091
    * Use request type = GET (Rpeat to keep adding new records to client db.)
    * Result: Fetches a new record from sever and saves the same into client database.
@@ -51,13 +51,13 @@ Clone the repository.
    * Result: Updates the specified record in client db.
 
 4. DELETE request:
-   * localhost:9090/deteAddress
+   * localhost:9090/deleteAddress
    * Pass the address ID in body
    * Use request type = DELETE
    * Result: Deletes the specified record in client db.
 
 5. SAVE request (direct save on client)
-   * localhost:9090/updateAddress
+   * localhost:9090/saveAddress
    * Pass the full address object JSON in body (raw and select JSON)
    * Use request type = POST
 
@@ -75,7 +75,7 @@ Clone the repository.
 
 ## Troubleshooting
 1. mvn: command not found?
-  - Please install maven. I won't tell how. :simple_smile
+  - Please install maven. I won't tell how. :)
 2. Cannot clone? Git says host not found?
   - Please check your proxy settings.
   - You may need to export these variables into environment:
@@ -89,7 +89,7 @@ Clone the repository.
     ```
 2. Maven build error?
   - This might be because of maven failing to find the JAVA_HOME.
-  - Please export your JAVA_HOME if maven cannot find it. `eport JAVA_HOME=<your java home>`
+  - Please export your JAVA_HOME. `eport JAVA_HOME=<your java home>`
 3. Cannot download maven dependenices?
   - Please check the proxy settings for maven
   - You can add proxies for maven in your  settings file `~/.m2/settings.xml`.
