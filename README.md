@@ -1,5 +1,6 @@
 ## Overview 
-We have two independent projects. Both are built using spring boot framework. Maven is used as a build tool.
+We have two independent projects.  
+Both projects are built using **spring boot** framework and **Maven** as the build tool.
 * deepak-client 
 * deepak-server
 
@@ -107,3 +108,25 @@ Clone the repository.
   </proxy>
   ```
   
+## IntelliJ 
+### View Code 
+1. Click 'Import Project'
+2. Navigate to `pom.xml` in any of the projects.
+3. Click 'Open'
+4. Check 'Import Maven projects automatically'.
+5. Keep hitting 'Next' and then 'Finish'.  
+All done, you should now have the beautiful project structure opened up!  
+
+### Run Client/Server
+1. Navigate to Edit/Add Configurations.
+2. Click the **+** button to add a new 'JAR Application'.
+3. Type any name for your application.
+4. Path to JAR: Click on ... and navigate to your jar file for example:  
+  ```
+  ./deepak-projects/deepak-client/target/deepak-client-0.1.0.jar
+  ```
+5. VM Options: -Dserver.port=9091 (or any port you love).
+6. Working Directory: Should look like `/Users/DeepakSahni/Downloads/deepakLab/deepak-projects/deepak-client`
+7. Apply -> Ok.
+8. Now you may run your client/server by hitting that play button on top.   
+For more details please refer to https://www.jetbrains.com/help/idea/run-debug-configuration-jar-application.html
